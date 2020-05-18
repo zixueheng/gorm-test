@@ -15,6 +15,7 @@ type User struct {
 }
 
 func main() {
+
 	db, err := gorm.Open("mysql", "root:123@(localhost:3306)/gorm?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		return
